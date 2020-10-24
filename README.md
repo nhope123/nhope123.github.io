@@ -1,7 +1,7 @@
 
 App Name 
 -----------------------------------
-Discription
+Description:
 
 
 
