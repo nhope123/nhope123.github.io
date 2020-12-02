@@ -1,0 +1,27 @@
+@import './../style/mixing.scss';
+
+$homePic: './../image/laptop.jpg';
+$fullWidth: 100vw;
+$fullHeight: 100vh;
+
+*{  box-sizing: border-box; }
+html, body{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+ #root{
+   @extend body;
+   background: #000 url($homePic) no-repeat left top fixed;
+   background-size: $fullWidth $fullHeight;
+ }
+
+
+#main{
+  @include displayPosition(grid, relative);
+
+  width: $fullWidth;
+  height: $fullHeight;
+  color: white;
+}

@@ -1,0 +1,5 @@
+
+@mixin displayPosition($display, $position){
+  display: $display;
+  position: $position;
+}
