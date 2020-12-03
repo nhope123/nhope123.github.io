@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Portfolio} from './component/main';
+
 import './style/index.scss';
-//import App from './App';
+import './style/nav.scss';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

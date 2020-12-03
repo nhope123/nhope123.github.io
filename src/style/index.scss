@@ -1,8 +1,5 @@
 @import './../style/mixing.scss';
-
-$homePic: './../image/laptop.jpg';
-$fullWidth: 100vw;
-$fullHeight: 100vh;
+@import './../style/variables.scss';
 
 *{  box-sizing: border-box; }
 html, body{
@@ -15,11 +12,12 @@ html, body{
    @extend body;
    background: #000 url($homePic) no-repeat left top fixed;
    background-size: $fullWidth $fullHeight;
+
  }
 
 
 #main{
-  @include displayPosition(grid, relative);
+  @include displayPosition(flex, relative);
 
   width: $fullWidth;
   height: $fullHeight;

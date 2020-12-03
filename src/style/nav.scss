@@ -1,1 +1,38 @@
+@import './../style/mixing.scss';
+@import './../style/variables.scss';
 
+ #navbar{
+  @include displayPosition(block,fixed);
+  @include dimension($fullWidth, 40px);
+
+
+  nav{
+    @include dimension(350px, 40px);
+    @include displayPosition(flex,relative);
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px auto;
+    //border-bottom: 2px solid red;
+
+
+
+    #active{
+      //border-radius: 15px;
+      border-top: 2px solid red;
+      //@include boxShadow(0px 4px 6px rgba(255,0,0,0.7));
+      //background-color: grey;
+      font-weight: bold;
+      text-shadow: 4px 4px  rgba(255,0,0,0.7);
+    }
+    div{
+        @include displayPosition(inline-block,relative);
+        @include dimension(70px, 40px);
+        @include satisfyFont();
+        line-height: 2.3;
+        text-align: center;
+        font-size: 18px;
+
+
+    }
+  }
+}

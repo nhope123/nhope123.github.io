@@ -1,5 +1,23 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Satisfy', cursive;
+*/
+@mixin satisfyFont() {
+  font-family: 'Satisfy', cursive;
+}
 @mixin displayPosition($display, $position){
   display: $display;
   position: $position;
+}
+
+@mixin dimension($width,$height){
+  width: $width;
+  height: $height;
+}
+
+@mixin boxShadow($value){
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
 }
