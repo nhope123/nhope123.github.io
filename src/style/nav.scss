@@ -13,17 +13,17 @@
     justify-content: center;
     margin: 20px auto;
     //border-bottom: 2px solid red;
+    z-index: 2;
 
 
-
-    #active{
+    /*.active{
       //border-radius: 15px;
       border-top: 2px solid red;
       //@include boxShadow(0px 4px 6px rgba(255,0,0,0.7));
       //background-color: grey;
       font-weight: bold;
       text-shadow: 4px 4px  rgba(255,0,0,0.7);
-    }
+    } */
     div{
         @include displayPosition(inline-block,relative);
         @include dimension(70px, 40px);
@@ -35,4 +35,37 @@
 
     }
   }
+}
+
+#navOne{
+  animation: navfirst 3s ease-out ;
+}
+@keyframes navfirst{
+  0%{ transform: translate(-(($fullWidth/2)+ 25vw), 0);}
+  100%{ transform: translate(0, 0);}
+}
+
+#navTwo{
+  animation: navsecond 3.2s ease-out ;
+  //animation-delay: 0.3s
+}
+@keyframes navsecond{
+  0%{ transform: translate(0,-(($fullWidth/2)+ 25vw));}
+  100%{ transform: translate(0, 0);}
+}
+#navThree{
+  animation: navthree 3.4s ease-out ;
+  //animation-delay: 0.5s
+}
+@keyframes navthree{
+  0%{ transform: translate(0,-(($fullWidth/2)+ 25vw));}
+  100%{ transform: translate(0, 0);}
+}
+#navFour{
+  animation: navfour 3.6s ease-out ;
+  //animation-delay: 0.5s
+}
+@keyframes navfour{
+  0%{ transform: translate((($fullWidth/2)+ 25vw),0);}
+  100%{ transform: translate(0, 0);}
 }

@@ -1,0 +1,6 @@
+@import './../style/mixing.scss';
+@import './../style/variables.scss';
+
+#home{
+  @include displayPosition(none,relative);
+}

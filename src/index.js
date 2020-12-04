@@ -4,6 +4,7 @@ import {Portfolio} from './component/main';
 
 import './style/index.scss';
 import './style/nav.scss';
+import './style/home.scss';
 
 import reportWebVitals from './reportWebVitals';
 
