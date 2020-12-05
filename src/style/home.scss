@@ -2,5 +2,15 @@
 @import './../style/variables.scss';
 
 #home{
-  @include displayPosition(none,relative);
+  @include dimension($fullWidth,auto);
+  @include displayPosition(flex,absolute);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: ($fullHeight /4);
+
+  div{
+    @include displayPosition(block,relative);
+  }
+
 }
