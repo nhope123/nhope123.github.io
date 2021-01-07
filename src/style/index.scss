@@ -10,7 +10,7 @@ html, body{
 }
  #root{
    @extend body;
-   background: #000 url($homePic) no-repeat left top fixed;
+   background:  url($tablePic) no-repeat left top fixed;
    background-size: $fullWidth $fullHeight;
 
  }

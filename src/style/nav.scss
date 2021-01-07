@@ -4,75 +4,68 @@
  #navbar{
   @include displayPosition(block,fixed);
   @include dimension($fullWidth, 40px);
+  z-index: 27;
+    nav{
+      @include dimension(350px, 40px);
+      @include displayPosition(flex,relative);
+      flex-direction: row;
+      justify-content: center;
+      margin: 20px auto;
 
 
-  nav{
-    @include dimension(350px, 40px);
-    @include displayPosition(flex,relative);
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px auto;
-    //border-bottom: 2px solid red;
-    z-index: 2;
-
-
-    /*.active{
-      //border-radius: 15px;
-      border-top: 2px solid red;
-      //@include boxShadow(0px 4px 6px rgba(255,0,0,0.7));
-      //background-color: grey;
-      font-weight: bold;
-      text-shadow: 4px 4px  rgba(255,0,0,0.7);
-    } */
-    div{
+      div{
         @include displayPosition(inline-block,relative);
-        @include dimension(70px, 40px);
+        @include dimension(auto, 40px);
         @include satisfyFont();
         line-height: 2.3;
         text-align: center;
         font-size: 18px;
-
-
-    }
-    div:hover{
-      text-shadow: -4px 5px 1px  rgba(255,0,0,0.7);
-      transform: scale(1.3);
-    }
-    div:active{
-      visibility:hidden;
-    }
+        padding: 0px 10px;
+        cursor: pointer;
+      }
+      div:hover{
+       color: rgba(255,0,0,0.7);
+       transform: scale(1.3);
+     }
+     div:active{
+       visibility:hidden;
+     }
   }
 }
 
-#navOne{
-  animation: navfirst 3s ease-out ;
-}
+#navOne{ animation: navfirst 2s ease-out ; }
 @keyframes navfirst{
   0%{ transform: translate(-(($fullWidth/2)+ 25vw), 0);}
   100%{ transform: translate(0, 0);}
 }
 
-#navTwo{
-  animation: navsecond 3.2s ease-out ;
-  //animation-delay: 0.3s
-}
+#navTwo{  animation: navsecond 2.2s ease-out ; }
 @keyframes navsecond{
   0%{ transform: translate(0,-(($fullWidth/2)+ 25vw));}
   100%{ transform: translate(0, 0);}
 }
-#navThree{
-  animation: navthree 3.4s ease-out ;
-  //animation-delay: 0.5s
-}
+
+#navThree{ animation: navthree 2.4s ease-out ; }
 @keyframes navthree{
   0%{ transform: translate(0,-(($fullWidth/2)+ 25vw));}
   100%{ transform: translate(0, 0);}
 }
-#navFour{
-  animation: navfour 3.6s ease-out ;
-  //animation-delay: 0.5s
-}
+
+#navFour{  animation: navfour 2.6s ease-out; }
 @keyframes navfour{
   0%{ transform: translate((($fullWidth/2)+ 25vw),0);}
   100%{ transform: translate(0, 0);}
+}
+
+.active{
+ text-decoration: underline;
+}
+
+
+@media screen and (min-width: 450px){
+  #navbar nav{
+    div{
+      font-size: calc(18px + .5vw)
+    }
+  }
 }

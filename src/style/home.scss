@@ -2,15 +2,45 @@
 @import './../style/variables.scss';
 
 #home{
-  @include dimension($fullWidth,auto);
+  @include dimension($fullWidth,$fullHeight);
   @include displayPosition(flex,absolute);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  bottom: ($fullHeight /4);
 
   div{
     @include displayPosition(block,relative);
+    padding: 10px;
+    text-align: center;
+  }
+  #nameIntro{
+    font-size: 26px;
+    animation: introName 2.5s ease-in;
+  }
+  #introContent{
+    font-size: 18px;
+    animation: contentIntro 2.6s ease-out;
+  }
+}
+
+@keyframes introName {
+  0%{ opacity: 0;}
+  40%{ opacity: 0;}
+  100%{ opacity: 1;}
+}
+@keyframes contentIntro {
+  0%{ opacity: 0;}
+  40%{ opacity: 0;}
+  100%{ opacity: 1;}
+}
+@media screen and (min-width: 450px){
+  #home{
+    #nameIntro{
+      font-size: calc(26px + 3vw);
+    }
+    #introContent{
+      font-size: calc(18px + 1vw);
+    }
   }
 
 }

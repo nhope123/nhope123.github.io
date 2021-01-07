@@ -4,8 +4,8 @@ export class Intro extends React.Component{
   render(){
     return(
       <section id={'home'}>
-        <div>Nial Hope</div>
-        <div>A Front End Developer from Ontario</div>
+        <div id={'nameIntro'}className={'animate__animated animate__bounce'}>Nial Hope</div>
+        <div id={'introContent'}>A Front End Developer and an aspiring Full-Stack developer </div>
       </section>
     )
   }
