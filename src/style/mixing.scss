@@ -21,3 +21,16 @@ font-family: 'Satisfy', cursive;
   -moz-box-shadow: $value;
   box-shadow: $value;
 }
+
+// Display flex direction, justify, and align attributes
+@mixin flexAttribute($direction,$justify,$align) {
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Border
+@mixin zeroBorder() {
+  border: 0;
+  border-radius: 10px;
+}

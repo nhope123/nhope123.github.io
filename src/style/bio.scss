@@ -1,0 +1,11 @@
+@import './mixing.scss';
+@import './variables.scss';
+
+#bio{
+  @include dimension(100%,$fullHeight);
+  @include displayPosition(flex,relative);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $HintOfRed;
+}

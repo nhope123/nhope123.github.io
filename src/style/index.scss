@@ -1,25 +1,21 @@
-@import './../style/mixing.scss';
-@import './../style/variables.scss';
+@import './mixing.scss';
+@import './variables.scss';
 
 *{  box-sizing: border-box; }
 html, body{
+  width: $fullWidth;
+  min-height: $fullHeight;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  overflow-x: hidden;
+  }
 
-}
- #root{
-   @extend body;
-   background:  url($tablePic) no-repeat left top fixed;
-   background-size: $fullWidth $fullHeight;
-
+  #root{
+  @include dimension(100%,auto);
+   margin: 0;
  }
 
-
-#main{
-  @include displayPosition(flex, relative);
-
-  width: $fullWidth;
-  height: $fullHeight;
+ #main{
+  @include displayPosition(block, relative);
+  @include dimension(100%,100%);
   color: white;
 }

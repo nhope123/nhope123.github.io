@@ -1,0 +1,19 @@
+@import './mixing.scss';
+@import './variables.scss';
+
+#project{
+  width: 100%;
+  min-height: $fullHeight;
+  @include displayPosition(flex,relative);
+  @include flexAttribute(column,center,center);
+  background-color: $BurningSand;
+
+  #project-container{
+    @include displayPosition(flex,relative);
+    @include flexAttribute(row,space-around,center);
+    flex-wrap: wrap;
+    @include dimension(100%,auto);
+    max-width: 1080px;
+    padding: 20px auto;
+  }
+}

@@ -1,0 +1,9 @@
+@import './mixing.scss';
+@import './variables.scss';
+
+#contact{
+  @include dimension(100%,$fullHeight);
+  @include displayPosition(flex,relative);
+  @include flexAttribute(column,center,center);
+  background-color: $GunPowder;
+}

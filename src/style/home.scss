@@ -1,38 +1,42 @@
-@import './../style/mixing.scss';
-@import './../style/variables.scss';
+@import './mixing.scss';
+@import './variables.scss';
 
 #home{
-  @include dimension($fullWidth,$fullHeight);
-  @include displayPosition(flex,absolute);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include dimension(100%,$fullHeight);
+  @include displayPosition(flex,relative);
+  @include flexAttribute(column,center,center);
+  background:  url($tablePic) no-repeat left top fixed;
 
   div{
     @include displayPosition(block,relative);
     padding: 10px;
     text-align: center;
   }
-  #nameIntro{
+  /*#nameIntro{
     font-size: 26px;
-    animation: introName 2.5s ease-in;
-  }
+    font-weight: bold;
+    animation: introName 3.5s ease-in;
+  }*/
   #introContent{
     font-size: 18px;
-    animation: contentIntro 2.6s ease-out;
+    animation: contentIntro 1.5s ease-in;
   }
 }
-
-@keyframes introName {
+// Bounce the title
+/*@keyframes introName {
   0%{ opacity: 0;}
   40%{ opacity: 0;}
   100%{ opacity: 1;}
-}
+}*/
+
+// Fade in the Name in intro content
 @keyframes contentIntro {
   0%{ opacity: 0;}
-  40%{ opacity: 0;}
+  //60%{ opacity: 0;}
   100%{ opacity: 1;}
 }
+
+// Css for all devices larger than moblie phones
 @media screen and (min-width: 450px){
   #home{
     #nameIntro{

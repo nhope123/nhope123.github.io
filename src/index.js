@@ -3,8 +3,12 @@ import ReactDOM from 'react-dom';
 import {Portfolio} from './component/main';
 
 import './style/index.scss';
-import './style/nav.scss';
+import './style/bio.scss';
 import './style/home.scss';
+import './style/project.scss';
+import './style/contact.scss';
+import './style/nav.scss';
+import './style/card.scss';
 
 import reportWebVitals from './reportWebVitals';
 

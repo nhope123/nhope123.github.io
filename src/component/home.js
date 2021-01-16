@@ -1,12 +1,13 @@
 import React from 'react';
 
-export class Intro extends React.Component{
+export class HomePage extends React.Component{
   render(){
-    return(
+    return (
       <section id={'home'}>
-        <div id={'nameIntro'}className={'animate__animated animate__bounce'}>Nial Hope</div>
+        <div id={'nameIntro'} >Nial Hope</div>
         <div id={'introContent'}>A Front End Developer and an aspiring Full-Stack developer </div>
       </section>
-    )
+
+    );
   }
 }

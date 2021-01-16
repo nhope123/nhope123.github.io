@@ -1,19 +1,21 @@
-@import './../style/mixing.scss';
-@import './../style/variables.scss';
+@import './mixing.scss';
+@import './variables.scss';
 
- #navbar{
-  @include displayPosition(block,fixed);
-  @include dimension($fullWidth, 40px);
-  z-index: 27;
-    nav{
-      @include dimension(350px, 40px);
-      @include displayPosition(flex,relative);
-      flex-direction: row;
-      justify-content: center;
-      margin: 20px auto;
+// Navigation bar css: for moblie phones
+#navbar{
+  @include displayPosition(flex,absolute);
+  @include flexAttribute(row,center,center);
+  @include dimension(100%,auto);
+  z-index: 1000;
 
+  nav{
+    @include dimension(350px, 40px);
+    @include displayPosition(flex,relative);
+    @include flexAttribute(row,center,center);
+    margin: 10px auto;
+    color: white;
 
-      div{
+    div{
         @include displayPosition(inline-block,relative);
         @include dimension(auto, 40px);
         @include satisfyFont();
@@ -22,48 +24,53 @@
         font-size: 18px;
         padding: 0px 10px;
         cursor: pointer;
-      }
-      div:hover{
-       color: rgba(255,0,0,0.7);
-       transform: scale(1.3);
-     }
-     div:active{
-       visibility:hidden;
-     }
-  }
+        color: white;
+
+
+        }
+    div:hover{
+         color: rgba(255,0,0,0.7);
+         transform: scale(1.3);
+       }
+    div:active{
+         visibility:hidden;
+       }
+    }
 }
 
-#navOne{ animation: navfirst 2s ease-out ; }
+.active{
+  border-bottom: 2px solid red;
+}
+
+// Home navigation link comes from left view
+#navOne{ animation: navfirst 2.5s ease-out ; }
 @keyframes navfirst{
   0%{ transform: translate(-(($fullWidth/2)+ 25vw), 0);}
   100%{ transform: translate(0, 0);}
 }
-
-#navTwo{  animation: navsecond 2.2s ease-out ; }
+// Bio navigation link comes from above view
+#navTwo{  animation: navsecond 2.7s ease-out ; }
 @keyframes navsecond{
   0%{ transform: translate(0,-(($fullWidth/2)+ 25vw));}
   100%{ transform: translate(0, 0);}
 }
-
-#navThree{ animation: navthree 2.4s ease-out ; }
+// Project navigation link comes from above view
+#navThree{ animation: navthree 2.9s ease-out ; }
 @keyframes navthree{
   0%{ transform: translate(0,-(($fullWidth/2)+ 25vw));}
   100%{ transform: translate(0, 0);}
 }
-
-#navFour{  animation: navfour 2.6s ease-out; }
+// Contact navigation link comes from right view
+#navFour{  animation: navfour 3.1s ease-out; }
 @keyframes navfour{
   0%{ transform: translate((($fullWidth/2)+ 25vw),0);}
   100%{ transform: translate(0, 0);}
 }
 
-.active{
- text-decoration: underline;
-}
-
-
+// Navigation bar css: lagrer than moblie phones
 @media screen and (min-width: 450px){
   #navbar nav{
+    margin: 20px auto;
     div{
       font-size: calc(18px + .5vw)
     }
