@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Component to display project information
-const Card = (props)=>{
+const ProjectCard = (props)=>{
   console.log(props.card);
   return (
     <div  className={'card-container'} tabindex={'0'}>
@@ -28,4 +28,4 @@ const Card = (props)=>{
   );
 }
 
-export default Card;
+export default ProjectCard;

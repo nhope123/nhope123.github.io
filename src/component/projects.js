@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './card.js';
- import convert from './../image/screenshots/converter.png';
+import ProjectCard from './project-card.js';
+// import convert from './../image/screenshots/converter.png';
 import cards from './../redux/actions/card-details.js';
 
 
@@ -8,9 +8,9 @@ import cards from './../redux/actions/card-details.js';
 
 export class ProjectPage extends React.Component{
   render(){
-    var test=[];
+    var project_cards = [];
     Object.entries(cards).forEach((item, i) => {
-      test.push(<Card key={i} card={item[1]} />)
+      project_cards.push(<ProjectCard key={i} card={item[1]} />)
     });
 
 
@@ -18,7 +18,7 @@ export class ProjectPage extends React.Component{
       <section id={'project'}>
         <div> Projects</div>
         <div id={'project-container'} >
-          {test}
+          {  project_cards }
         </div>
       </section>
     );
