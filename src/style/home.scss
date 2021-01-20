@@ -12,13 +12,19 @@
     padding: 10px;
     text-align: center;
   }
-  /*#nameIntro{
+  #nameIntro{
     font-size: 26px;
-    font-weight: bold;
-    animation: introName 3.5s ease-in;
-  }*/
+    //font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    font-style: italic;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.8);
+    //animation: introName 3.5s ease-in;
+  }
+
   #introContent{
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.8);
     animation: contentIntro 1.5s ease-in;
   }
 }

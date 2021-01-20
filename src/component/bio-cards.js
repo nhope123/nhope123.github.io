@@ -3,17 +3,23 @@ import React,{Component} from 'react';
 // Component for the languages I know
 class ProficiencyCard extends Component{
   render(){
-    const frameworks;
-    //Object.
+    let proficentEntities = [];
+    this.props.frameworks.forEach((item, i) => {
+      //console.log(item);
+      proficentEntities.push(<CardIcon key={i} {...item} />)
+    });
+
+
     return (
-      <div>
+      <div className={this.props.color + ' about-card'}>
         <div>
           <h3>{this.props.title}</h3>
         </div>
         <div><p>{this.props.description}</p></div>
-        <div>
+        <div className={'about-framework'}>
+          {proficentEntities}
           {/* Gets an array of objects containing src, alt, name. on hover a tooltip will show name */}
-          react Redux html css sass javascript python
+
         </div>
       </div>
     );
@@ -22,10 +28,13 @@ class ProficiencyCard extends Component{
 
 // Component for the Bio page concept card
 const CardIcon = (props) => {
+  console.log(props);
   return (
-    <div>
-      <img src={props.image.src} alt={props.image.alt} />
-      <span >{props.image.name}</span>
+    <div >
+      <img src={props.src} alt={props.alt} tabindex={'0'} />
+      {/*<span >{props.name}</span>*/}
     </div>
   );
 }
+
+export default ProficiencyCard;

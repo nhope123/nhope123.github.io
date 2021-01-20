@@ -9,7 +9,7 @@ class ScrollNav extends React.Component{
         <NavLink to="/" exact  >
           <div id={this.props.ids[0]}  tabIndex='0'>Home</div>
         </NavLink>
-        <NavLink to="/bio" >
+        <NavLink to="/bio" activeClassName={'active black-font'}>
           <div id={this.props.ids[1]} tabIndex='0'>Bio</div>
         </NavLink>
         <NavLink to="/projects" >

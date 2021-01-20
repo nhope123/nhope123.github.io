@@ -1,0 +1,42 @@
+@import './mixing.scss';
+@import './variables.scss';
+
+.about-card{
+  @include displayPosition(flex, relative);
+  @include dimension(90%, auto);
+  @include flexAttribute(column,space-between,center);
+  padding: 15px;
+  border: 0;
+  border-radius: 20px;
+  //background-color: #80b2a3; //$GreenGold;// $BurningSand; //#2C6277;
+  color: white;
+
+  h3{
+    margin: 0;
+  }
+
+
+  .about-framework{
+    @include displayPosition(flex, relative);
+    @include dimension(100%, auto);
+    @include flexAttribute(row,space-around,center);
+
+
+    div{
+      @include displayPosition(inline-block, relative);
+      @include dimension(auto, auto);
+      cursor: pointer;
+      border-radius: 50%;
+      padding: 4px;
+      background-color: white;
+      @include boxShadow(3px 3px 6px rgba(0,0,0,0.8));
+
+
+
+      img{
+        @include displayPosition(block, relative);
+        @include dimension(24px,24px);
+      }
+    }
+  }
+}

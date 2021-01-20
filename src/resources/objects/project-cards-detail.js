@@ -1,0 +1,108 @@
+// Image import
+import convert from './../image/screenshots/converter.png';
+import calculate from './../image/screenshots/calculator.png';
+import clocki from './../image/screenshots/clock.png';
+import tutor from './../image/screenshots/document.png';
+import drum from './../image/screenshots/drums.png';
+import preview from './../image/screenshots/previewer.png';
+import product from './../image/screenshots/product_landing.png';
+import quotes from './../image/screenshots/randomQuote.png';
+import survey from './../image/screenshots/survey.png';
+import tributes from './../image/screenshots/tribute.png';
+
+// Projects card information
+const cards = {
+  conveter:{
+    name:'Rebel Converter',
+    description:'Online unit converter for length, weight and temperature.',
+    src: convert,
+    alt:'Converter ScreenShot',
+    tags:['React','Redux','Sass','HTML','Css'],
+    repository:'https://github.com/nhope123/converter',
+    website:'https://nhope123.github.io/converter/'
+  },
+  mixer:{
+    name:'eFonic',
+    description:'Sound effect drum machine.',
+    src: drum,
+    alt:'Drum Machine ScreenShot',
+    tags:['React','HTML','Css'],
+    repository:'https://github.com/nhope123/drums',
+    website:'https://nhope123.github.io/drums/'
+  },
+  clock:{
+    name:'Rebel Pomodoro',
+    description:'Web base countdown timer.',
+    src: clocki,
+    alt:'Pomodoro Clock ScreenShot',
+    tags:['React','HTML','Css'],
+    repository:'https://github.com/nhope123/pomodoro',
+    website:'https://nhope123.github.io/pomodoro/'
+  },
+  calculator:{
+    name:'Calculator',
+    description:'Online calculator.',
+    src:calculate,
+    alt:'Calculator ScreenShot',
+    tags:['React','HTML','Css','Mathjs'],
+    repository:'https://github.com/nhope123/calculator',
+    website:'https://nhope123.github.io/calculator/'
+  },
+  quote:{
+    name:'Inspire',
+    description:'Random programming quote machine',
+    src: quotes,
+    alt:'Quote Machine ScreenShot',
+    tags:['React','HTML','Css'],
+    repository:'https://github.com/nhope123/inspire',
+    website:'https://nhope123.github.io/inspire/'
+  },
+  markdown:{
+    name:'PreMarked',
+    description:'Markdown previewer',
+    src: preview,
+    alt:'Markdown Previewer ScreenShot',
+    tags:['React','HTML','Css','Marked.js'],
+    repository:'https://github.com/nhope123/previewer',
+    website:'https://nhope123.github.io/previewer/'
+  },
+  product:{
+    name:'Hardcore Fitness',
+    description:'Gym product landing page.',
+    src: product,
+    alt:'Product Landing Page ScreenShot',
+    tags:['HTML','Css'],
+    repository:'https://github.com/nhope123/nhope123.github.io',
+    website:'https://nhope123.github.io/webpages/product_landing.html'
+  },
+  tribute:{
+    name:'Tribute',
+    description:'St Vincent tribute page',
+    src: tributes,
+    alt:'Tribute ScreenShot',
+    tags:['HTML','Css'],
+    repository:'https://github.com/nhope123/nhope123.github.io',
+    website:'https://nhope123.github.io/webpages/tribute.html'
+  },
+  form:{
+    name:'Survey',
+    description:'Travel survey form',
+    src: survey,
+    alt:'Survey Form ScreenShot',
+    tags:['HTML','Css'],
+    repository:'https://github.com/nhope123/nhope123.github.io',
+    website:'https://nhope123.github.io/webpages/survey_form.html'
+  },
+  tutorial:{
+    name:'ShellCom',
+    description:'Unix shell tutorial',
+    src: tutor,
+    alt:'Tutorial ScreenShot',
+    tags:['HTML','Css'],
+    repository:'https://github.com/nhope123/nhope123.github.io',
+    website:'https://nhope123.github.io/webpages/documentation.html'
+  }
+}
+;
+
+export default cards;

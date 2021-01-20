@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from './project-card.js';
 // import convert from './../image/screenshots/converter.png';
-import cards from './../redux/actions/card-details.js';
+import cards from './../resources/objects/project-cards-detail.js';
 
 
 

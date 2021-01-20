@@ -9,6 +9,7 @@ import './style/project.scss';
 import './style/contact.scss';
 import './style/nav.scss';
 import './style/card.scss';
+import './style/about-cards.scss';
 
 import reportWebVitals from './reportWebVitals';
 

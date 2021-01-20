@@ -35,6 +35,12 @@
     div:active{
          visibility:hidden;
        }
+
+       #bio[class*='active']{
+         color: black;
+       }
+
+
     }
 }
 

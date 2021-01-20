@@ -5,8 +5,9 @@
   @include dimension(100%,$fullHeight);
   @include displayPosition(flex,relative);
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  background-color: $HintOfRed;
+  background-color: #a1acbd; //#2C6277;
   color: black;
+  padding-top: 60px;
 }

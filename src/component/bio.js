@@ -1,26 +1,27 @@
 import React,{Component} from 'react';
+import ProficiencyCard from './bio-cards.js';
+import {proficientData,familiarData} from './../resources/objects/about-cards-detail.js';
 
+// Main component for the About page
 export class BioPage extends Component{
   render(){
+
     return (
       <section id={'bio'}>
         <div><h2>Bio</h2></div>
-        <div>
-          <h3>Proficiency</h3>
-          <div><p>Languages and frameworks I proficiently use.</p></div>
-          <div>
-            react Redux html css sass javascript python
-          </div>
-        </div>
-        <div>
-          <h3>Familiar</h3>
-          <div><p>Languages and frameworks I am currently improving my knownwledge on.</p></div>
-          <div>
-            Bootstrap D3js nodejs mongodb jest
-          </div>
-        </div>
+        <ProficiencyCard color={'green-card'} {...proficientData} />
+        <ProficiencyCard color={'blue-card'}{...familiarData} />
+
         <div>
           <h3>Concepts</h3>
+          <ul>
+            <li>Mobile first development</li>
+            <li>Flexbox and Grid responsive development</li>
+
+
+
+
+          </ul>
         </div>
       </section>
     );

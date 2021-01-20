@@ -1,14 +1,25 @@
 
-$homePic: './../image/laptop.jpg';
-$tablePic: './../image/table.jpeg';
-$keyboardPic: './../image/keyboard.jpg';
+// Background Images
+$tablePic: './../resources/image/table.jpeg';
+$keyboardPic: './../resources/image/keyboard.jpg';
 $fullWidth: 100vw;
 $fullHeight: 100vh;
 
-// color
+// Color
 $HintOfRed: #f1f4f1;
 $Tapestry: #b2659f;
 $Bouquet: #be90aa;
 $BurningSand: #d49076;
 $GunPowder: #34383e;
-;
+$GreenGold:#2C6277;
+
+.green-card{
+  background-color: #80b2a3;
+}
+.blue-card{
+  background-color: #2C6277;
+}
+
+.black-font{
+  color:black;
+}

@@ -6,7 +6,7 @@
   min-height: $fullHeight;
   @include displayPosition(flex,relative);
   @include flexAttribute(column,center,center);
-  background-color: $BurningSand;
+  background-color: #2C6277; //#a1acbd; //$BurningSand;
 
   #project-container{
     @include displayPosition(flex,relative);
