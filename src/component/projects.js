@@ -16,7 +16,7 @@ export class ProjectPage extends React.Component{
 
     return (
       <section id={'project'}>
-        <div> Projects</div>
+        <div><h2 >Projects</h2></div>
         <div id={'project-container'} >
           {  project_cards }
         </div>

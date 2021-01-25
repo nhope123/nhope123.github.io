@@ -87,3 +87,5 @@ export const familiarData = {
     }
   ]
 };
+
+export const frameworkIconData = [...proficientData.frameworks,...familiarData.frameworks];

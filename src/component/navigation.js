@@ -19,7 +19,6 @@ class ScrollNav extends React.Component{
           <div id={this.props.ids[3]} tabIndex='0'>Contact</div>
         </NavLink>
 
-
       </nav>
     );
   }

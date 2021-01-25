@@ -2,18 +2,18 @@
 @import './variables.scss';
 
 #project{
-  width: 100%;
-  min-height: $fullHeight;
   @include displayPosition(flex,relative);
   @include flexAttribute(column,center,center);
-  background-color: #2C6277; //#a1acbd; //$BurningSand;
+  @include fullPageDimension;
+  @include titleSpace;
+  background-color: #2C6277;
 
   #project-container{
+    @include dimension(100%,auto);
     @include displayPosition(flex,relative);
     @include flexAttribute(row,space-around,center);
     flex-wrap: wrap;
-    @include dimension(100%,auto);
-    max-width: 1080px;
+    max-width: 1380px;
     padding: 20px auto;
   }
 }

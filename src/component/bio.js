@@ -12,17 +12,6 @@ export class BioPage extends Component{
         <ProficiencyCard color={'green-card'} {...proficientData} />
         <ProficiencyCard color={'blue-card'}{...familiarData} />
 
-        <div>
-          <h3>Concepts</h3>
-          <ul>
-            <li>Mobile first development</li>
-            <li>Flexbox and Grid responsive development</li>
-
-
-
-
-          </ul>
-        </div>
       </section>
     );
   }

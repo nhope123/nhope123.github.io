@@ -2,8 +2,117 @@
 @import './variables.scss';
 
 #contact{
-  @include dimension(100%,$fullHeight);
+  @include fullPageDimension;
   @include displayPosition(flex,relative);
-  @include flexAttribute(column,center,center);
+  @include flexAttribute(column,space-around,center);
+  @include titleSpace;
   background-color: $GunPowder;
+
+  form{
+    @include displayPosition(flex,relative);
+    @include flexAttribute(column,space-around,center);
+    @include dimension(90vw,auto);
+    max-width: 650px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 25px 15px 10px;
+    color: black;
+    border-radius: 10px;
+
+    div{
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    label{
+      @include displayPosition(inline-block, relative);
+      width: 90px;
+
+    }
+    input{
+      width: calc(100% - 90px);
+      min-width: 204px;
+      border: 1px solid $GunPowder;
+      border-radius: 3px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: black;
+      padding: 0px 10px;
+
+    }
+    textarea{
+      height: 140px;
+      @extend input;
+    }
+    button{
+      line-height: 1.5;
+      font-size: 15px;
+      float: right;
+      background-color: $GunPowder;
+      color: white;
+      padding: 5px 15px;
+      border: 3px solid $GunPowder;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:active{
+      border: 3px inset white;
+    }
+
+  }
+
+  footer{
+    @include displayPosition(flex, relative);
+    @include flexAttribute(row,center,center);
+    @include dimension(100%, auto);
+
+    a{
+      padding: 10px;
+      font-size: 26px;
+      color: rgba(255,255,255,0.9);
+    }
+    a:hover{
+      transform: scale(1.3);
+    }
+  }
+  a:hover i{
+    transform: scale(1.3);
+  }
+  a:active i{
+    visibility: hidden;
+  }
+  #copyright{
+    font-family: 'Pacifico', cursive;
+    font-size: 14px;
+  }
+}
+
+// Css for all devices larger than moblie phones
+@media screen and (min-width: 650px){
+  #contact{
+    form{
+      padding: 25px;
+      div{
+        margin-bottom: 15px;
+      }
+      label{
+        width: 120px;
+        margin-bottom: 10px;
+      }
+      input{
+        width: calc(100% - 1px);
+      }
+      textarea{
+        height: 190px;
+      }
+    }
+
+  footer{
+    a i{
+      font-size: 3.2vw;
+      }
+    }
+  #copyright{
+    font-size: 16px;
+  }
+  }
+
 }

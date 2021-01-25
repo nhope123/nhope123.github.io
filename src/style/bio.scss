@@ -2,12 +2,11 @@
 @import './variables.scss';
 
 #bio{
-  @include dimension(100%,$fullHeight);
+  @include fullPageDimension;
   @include displayPosition(flex,relative);
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #a1acbd; //#2C6277;
-  color: black;
-  padding-top: 60px;
+  @include flexAttribute(column,space-around,center);
+  @include titleSpace;
+  background-color: $GunPowder; 
+  color: white;
+
 }

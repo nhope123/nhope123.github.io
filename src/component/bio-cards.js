@@ -15,7 +15,7 @@ class ProficiencyCard extends Component{
         <div>
           <h3>{this.props.title}</h3>
         </div>
-        <div><p>{this.props.description}</p></div>
+        <div className={'about-card-content'}><p>{this.props.description}</p></div>
         <div className={'about-framework'}>
           {proficentEntities}
           {/* Gets an array of objects containing src, alt, name. on hover a tooltip will show name */}
@@ -27,12 +27,12 @@ class ProficiencyCard extends Component{
 }
 
 // Component for the Bio page concept card
-const CardIcon = (props) => {
+export const CardIcon = (props) => {
   console.log(props);
   return (
     <div >
       <img src={props.src} alt={props.alt} tabindex={'0'} />
-      {/*<span >{props.name}</span>*/}
+      <span >{props.name}</span>
     </div>
   );
 }

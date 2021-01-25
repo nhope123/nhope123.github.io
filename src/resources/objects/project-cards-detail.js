@@ -17,7 +17,7 @@ const cards = {
     description:'Online unit converter for length, weight and temperature.',
     src: convert,
     alt:'Converter ScreenShot',
-    tags:['React','Redux','Sass','HTML','Css'],
+    tags:['React','Redux','Sass','HTML','CSS'],
     repository:'https://github.com/nhope123/converter',
     website:'https://nhope123.github.io/converter/'
   },
@@ -26,7 +26,7 @@ const cards = {
     description:'Sound effect drum machine.',
     src: drum,
     alt:'Drum Machine ScreenShot',
-    tags:['React','HTML','Css'],
+    tags:['React','HTML','CSS'],
     repository:'https://github.com/nhope123/drums',
     website:'https://nhope123.github.io/drums/'
   },
@@ -35,7 +35,7 @@ const cards = {
     description:'Web base countdown timer.',
     src: clocki,
     alt:'Pomodoro Clock ScreenShot',
-    tags:['React','HTML','Css'],
+    tags:['React','HTML','CSS'],
     repository:'https://github.com/nhope123/pomodoro',
     website:'https://nhope123.github.io/pomodoro/'
   },
@@ -44,7 +44,7 @@ const cards = {
     description:'Online calculator.',
     src:calculate,
     alt:'Calculator ScreenShot',
-    tags:['React','HTML','Css','Mathjs'],
+    tags:['React','HTML','CSS','Mathjs'],
     repository:'https://github.com/nhope123/calculator',
     website:'https://nhope123.github.io/calculator/'
   },
@@ -53,7 +53,7 @@ const cards = {
     description:'Random programming quote machine',
     src: quotes,
     alt:'Quote Machine ScreenShot',
-    tags:['React','HTML','Css'],
+    tags:['React','HTML','CSS'],
     repository:'https://github.com/nhope123/inspire',
     website:'https://nhope123.github.io/inspire/'
   },
@@ -62,7 +62,7 @@ const cards = {
     description:'Markdown previewer',
     src: preview,
     alt:'Markdown Previewer ScreenShot',
-    tags:['React','HTML','Css','Marked.js'],
+    tags:['React','HTML','CSS','Marked.js'],
     repository:'https://github.com/nhope123/previewer',
     website:'https://nhope123.github.io/previewer/'
   },
@@ -71,7 +71,7 @@ const cards = {
     description:'Gym product landing page.',
     src: product,
     alt:'Product Landing Page ScreenShot',
-    tags:['HTML','Css'],
+    tags:['HTML','CSS','JavaScript'],
     repository:'https://github.com/nhope123/nhope123.github.io',
     website:'https://nhope123.github.io/webpages/product_landing.html'
   },
@@ -80,7 +80,7 @@ const cards = {
     description:'St Vincent tribute page',
     src: tributes,
     alt:'Tribute ScreenShot',
-    tags:['HTML','Css'],
+    tags:['HTML','CSS','JavaScript'],
     repository:'https://github.com/nhope123/nhope123.github.io',
     website:'https://nhope123.github.io/webpages/tribute.html'
   },
@@ -89,7 +89,7 @@ const cards = {
     description:'Travel survey form',
     src: survey,
     alt:'Survey Form ScreenShot',
-    tags:['HTML','Css'],
+    tags:['HTML','CSS','JavaScript'],
     repository:'https://github.com/nhope123/nhope123.github.io',
     website:'https://nhope123.github.io/webpages/survey_form.html'
   },
@@ -98,7 +98,7 @@ const cards = {
     description:'Unix shell tutorial',
     src: tutor,
     alt:'Tutorial ScreenShot',
-    tags:['HTML','Css'],
+    tags:['HTML','CSS','JavaScript'],
     repository:'https://github.com/nhope123/nhope123.github.io',
     website:'https://nhope123.github.io/webpages/documentation.html'
   }

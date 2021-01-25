@@ -1,8 +1,12 @@
 @import './mixing.scss';
 @import './variables.scss';
 
+h2{
+  font-size: 24px;
+}
+
 #home{
-  @include dimension(100%,$fullHeight);
+  @include fullPageDimension;
   @include displayPosition(flex,relative);
   @include flexAttribute(column,center,center);
   background:  url($tablePic) no-repeat left top fixed;
@@ -14,7 +18,6 @@
   }
   #nameIntro{
     font-size: 26px;
-    //font-weight: bold;
     font-family: 'Fredoka One', cursive;
     font-style: italic;
     text-shadow: 4px 4px 6px rgba(0,0,0,0.8);
@@ -44,6 +47,12 @@
 
 // Css for all devices larger than moblie phones
 @media screen and (min-width: 450px){
+  h2{
+    font-size: calc(24px + 0.9vw);
+  }
+  h3{
+    font-size: calc(14px + 0.9vw);
+  }
   #home{
     #nameIntro{
       font-size: calc(26px + 3vw);
