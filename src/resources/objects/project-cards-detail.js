@@ -9,6 +9,7 @@ import product from './../image/screenshots/product_landing.png';
 import quotes from './../image/screenshots/randomQuote.png';
 import survey from './../image/screenshots/survey.png';
 import tributes from './../image/screenshots/tribute.png';
+import oldPage from './../image/screenshots/website.png';
 
 // Projects card information
 const cards = {
@@ -72,8 +73,8 @@ const cards = {
     src: product,
     alt:'Product Landing Page ScreenShot',
     tags:['HTML','CSS','JavaScript'],
-    repository:'https://github.com/nhope123/nhope123.github.io',
-    website:'https://nhope123.github.io/webpages/product_landing.html'
+    repository:'https://github.com/nhope123/2020Portfolio/blob/master/webpages/product_landing.html',
+    website:'https://nhope123.github.io/2020Portfolio/webpages/product_landing.html'
   },
   tribute:{
     name:'Tribute',
@@ -81,8 +82,8 @@ const cards = {
     src: tributes,
     alt:'Tribute ScreenShot',
     tags:['HTML','CSS','JavaScript'],
-    repository:'https://github.com/nhope123/nhope123.github.io',
-    website:'https://nhope123.github.io/webpages/tribute.html'
+    repository:'https://github.com/nhope123/2020Portfolio/blob/master/webpages/tribute.html',
+    website:'https://nhope123.github.io/2020Portfolio/webpages/tribute.html'
   },
   form:{
     name:'Survey',
@@ -90,8 +91,8 @@ const cards = {
     src: survey,
     alt:'Survey Form ScreenShot',
     tags:['HTML','CSS','JavaScript'],
-    repository:'https://github.com/nhope123/nhope123.github.io',
-    website:'https://nhope123.github.io/webpages/survey_form.html'
+    repository:'https://github.com/nhope123/2020Portfolio/blob/master/webpages/survey_form.html',
+    website:'https://nhope123.github.io/2020Portfolio/webpages/survey_form.html'
   },
   tutorial:{
     name:'ShellCom',
@@ -99,8 +100,17 @@ const cards = {
     src: tutor,
     alt:'Tutorial ScreenShot',
     tags:['HTML','CSS','JavaScript'],
-    repository:'https://github.com/nhope123/nhope123.github.io',
-    website:'https://nhope123.github.io/webpages/documentation.html'
+    repository:'https://github.com/nhope123/2020Portfolio/blob/master/webpages/documentation.html',
+    website:'https://nhope123.github.io/2020Portfolio/webpages/documentation.html'
+  },
+  portfolio:{
+    name:'Old Portfolio',
+    description:'Frond-End Portfolio created in 2020.',
+    src: oldPage,
+    alt:'Old Portfolio ScreenShot',
+    tags:['React','HTML','CSS','JavaScript'],
+    repository:'https://github.com/nhope123/2020Portfolio',
+    website:'https://nhope123.github.io/2020Portfolio'
   }
 }
 ;
