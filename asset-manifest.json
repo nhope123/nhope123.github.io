@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2e96c4e8.chunk.css",
+    "main.js": "/static/js/main.794072ae.chunk.js",
+    "main.js.map": "/static/js/main.794072ae.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9f3f1e3c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9f3f1e3c.js.map",
+    "static/js/2.666b82a6.chunk.js": "/static/js/2.666b82a6.chunk.js",
+    "static/js/2.666b82a6.chunk.js.map": "/static/js/2.666b82a6.chunk.js.map",
+    "static/js/3.696f2b84.chunk.js": "/static/js/3.696f2b84.chunk.js",
+    "static/js/3.696f2b84.chunk.js.map": "/static/js/3.696f2b84.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2e96c4e8.chunk.css.map": "/static/css/main.2e96c4e8.chunk.css.map",
+    "static/js/2.666b82a6.chunk.js.LICENSE.txt": "/static/js/2.666b82a6.chunk.js.LICENSE.txt",
+    "static/media/calculator.d111ce10.png": "/static/media/calculator.d111ce10.png",
+    "static/media/clock.034f049b.png": "/static/media/clock.034f049b.png",
+    "static/media/converter.dbd6aa23.png": "/static/media/converter.dbd6aa23.png",
+    "static/media/css.4061c54b.png": "/static/media/css.4061c54b.png",
+    "static/media/d3js.49efc1a8.png": "/static/media/d3js.49efc1a8.png",
+    "static/media/document.eaa83324.png": "/static/media/document.eaa83324.png",
+    "static/media/drums.c9f4de16.png": "/static/media/drums.c9f4de16.png",
+    "static/media/html.2e668c95.png": "/static/media/html.2e668c95.png",
+    "static/media/javascript.a75b7476.png": "/static/media/javascript.a75b7476.png",
+    "static/media/jest.b58fe313.png": "/static/media/jest.b58fe313.png",
+    "static/media/mongodb.e8169cbb.png": "/static/media/mongodb.e8169cbb.png",
+    "static/media/node.fe06fb39.png": "/static/media/node.fe06fb39.png",
+    "static/media/previewer.0a7049b8.png": "/static/media/previewer.0a7049b8.png",
+    "static/media/product_landing.86063251.png": "/static/media/product_landing.86063251.png",
+    "static/media/randomQuote.bc393073.png": "/static/media/randomQuote.bc393073.png",
+    "static/media/react.ccbd9d34.png": "/static/media/react.ccbd9d34.png",
+    "static/media/redux.45e6cfea.png": "/static/media/redux.45e6cfea.png",
+    "static/media/sass.1411185f.png": "/static/media/sass.1411185f.png",
+    "static/media/survey.8c4855c8.png": "/static/media/survey.8c4855c8.png",
+    "static/media/home.scss": "/static/media/table.c717defa.jpeg",
+    "static/media/tribute.88f18505.png": "/static/media/tribute.88f18505.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f3f1e3c.js",
+    "static/js/2.666b82a6.chunk.js",
+    "static/css/main.2e96c4e8.chunk.css",
+    "static/js/main.794072ae.chunk.js"
+  ]
+}
