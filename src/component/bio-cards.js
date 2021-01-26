@@ -4,11 +4,9 @@ import React,{Component} from 'react';
 class ProficiencyCard extends Component{
   render(){
     let proficentEntities = [];
-    this.props.frameworks.forEach((item, i) => {
-      //console.log(item);
+    this.props.frameworks.forEach((item, i) => {  
       proficentEntities.push(<CardIcon key={i} {...item} />)
     });
-
 
     return (
       <div className={this.props.color + ' about-card'}>
@@ -18,8 +16,6 @@ class ProficiencyCard extends Component{
         <div className={'about-card-content'}><p>{this.props.description}</p></div>
         <div className={'about-framework'}>
           {proficentEntities}
-          {/* Gets an array of objects containing src, alt, name. on hover a tooltip will show name */}
-
         </div>
       </div>
     );
@@ -28,10 +24,9 @@ class ProficiencyCard extends Component{
 
 // Component for the Bio page concept card
 export const CardIcon = (props) => {
-  console.log(props);
   return (
     <div >
-      <img src={props.src} alt={props.alt} tabindex={'0'} />
+      <img src={props.src} alt={props.alt} tabIndex={'0'} />
       <span >{props.name}</span>
     </div>
   );

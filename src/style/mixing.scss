@@ -80,7 +80,7 @@ font-family: 'Pacifico', cursive;
 
     img{
       @include displayPosition(block, relative);
-      @include dimension(calc(24px + 0.8vw),calc(24px + 0.8vw));
+      @include dimension(calc(20px + 0.8vw),calc(20px + 0.8vw));
     }
   }
   div span::after{

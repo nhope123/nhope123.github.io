@@ -16,4 +16,53 @@
     max-width: 1380px;
     padding: 20px auto;
   }
+
+  .selection-container{
+    @include dimension(100%,auto);
+    @include displayPosition(flex,relative);
+    @include flexAttribute(row,space-evenly,center);
+    //flex-wrap: wrap;
+    margin-bottom: 25px;
+    div{
+      @include displayPosition(flex, relative);
+      @include flexAttribute(row,space-evenly,center);
+      @include dimension(auto, auto);
+      min-width: 75px;
+      //
+      cursor: pointer;
+      border: 1px solid white;
+      border-radius: 10px;
+      img{
+        @include displayPosition(none, relative);
+        width: 16px;
+        margin: 0px 4px 0px 8px;
+      }
+      span{
+        @include displayPosition(inline-block, relative);
+        font-size: 16px;
+        padding: 0px 8px 0px 4px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 550px) {
+  #project{
+    .selection-container{
+      @include flexAttribute(row,center,center);
+      div{
+        margin: calc( 1vw);
+        min-width: 108px;
+        img{
+          @include displayPosition(inline-block, relative);
+          width: calc(16px );
+        }
+        span{
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }

@@ -11,10 +11,8 @@ const ProjectCard = (props)=>{
     }
   });
 
-  //console.log(iconData);
-  //const tag = props.card.tags.join(" ");
   return (
-    <div  className={'card-container'} tabindex={'0'}>
+    <div  className={'card-container'} tabIndex={'0'}>
       {/* Visible screenshot */}
       <div className={'screenshot'}>
         <img src={props.card.src} alt={props.card.alt} />
@@ -25,11 +23,11 @@ const ProjectCard = (props)=>{
         <div > {props.card.description} </div>
         <div className={'project-framework'} > {framework} </div>
         <div className={'card-links'}>
-          <a href={props.card.repository} title={'Github Repo'} >
+          <a href={props.card.repository} title={'Github Repo'} target={'_blank'} rel={'noreferrer'}>
             <span className={'fa fa-github'} aria-hidden={'true'}></span>
           </a>
-          <a href={props.card.website} title={'Website'}>
-            <span className={'fa fa-ravelry'} aria-hidden={'true'} ></span>
+          <a href={props.card.website} title={'Website'} target={'_blank'} rel={'noreferrer'}>
+            <span className={"fa fa-globe"} aria-hidden={'true'} ></span>
           </a>
         </div>
       </div>
