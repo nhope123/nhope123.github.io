@@ -3,7 +3,7 @@
 
 #project{
   @include displayPosition(flex,relative);
-  @include flexAttribute(column,center,center);
+  @include flexAttribute(column,flex-start,center);
   @include fullPageDimension;
   @include titleSpace;
   background-color: #2C6277;
@@ -44,9 +44,12 @@
         line-height: 1.5;
       }
     }
+    div:hover{
+      @include boxShadow(3px 3px 6px $GunPowder);
+      transform: scale(1.1);
+    }
   }
 }
-
 
 @media screen and (min-width: 550px) {
   #project{
@@ -65,4 +68,10 @@
       }
     }
   }
+}
+
+.selected{
+  border: 2px inset black !important;
+  color: $GreenGold;
+  background-color: white;
 }

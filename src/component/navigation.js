@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
-// Scrolling Navigation
+// Links to all components
 class ScrollNav extends React.Component{
   render(){
     return(
@@ -18,23 +18,13 @@ class ScrollNav extends React.Component{
         <NavLink to="/contact">
           <div id={this.props.ids[3]} tabIndex='0'>Contact</div>
         </NavLink>
-
       </nav>
     );
   }
-
 }
 
-/*
-<nav >
-  <div id={'navOne'} className={'active'} tabIndex='0'>Home</div>
-  <div id={'navTwo'} tabIndex='0'>About</div>
-  <div id={'navThree'} tabIndex='0'>Project</div>
-  <div id={'navFour'} tabIndex='0'>Contact</div>
-</nav>
-*/
-
-export class Navigation extends React.Component{
+// Navigation
+export default class Navigation extends React.Component{
   render(){
     // Navigation ids
     const navIds = ['navOne','navTwo','navThree','navFour'];

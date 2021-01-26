@@ -1,14 +1,13 @@
 import React from 'react';
-import {Navigation} from './navigation.js';
-import {HomePage} from './home.js';
-import {ContactPage} from './contact.js';
-import {BioPage} from './bio.js';
-import {ProjectPage} from './projects.js';
+import Navigation from './navigation.js';
+import HomePage from './home.js';
+import ContactPage from './contact.js';
+import BioPage from './bio.js';
+import ProjectPage from './projects.js';
 import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
 
-
 //  Central container for all app components passed to HTML file
-export class Portfolio extends React.Component{
+export default class Portfolio extends React.Component{
   render(){
     return(
       <Router>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Component containing the form elements for the contact page
-const Form = () => { 
+const Form = () => {
   return (
     <form >
       <div >
@@ -46,7 +46,7 @@ const Footer = () =>{
 }
 
 // Contact Page main component
-export class ContactPage extends React.Component{
+export default class ContactPage extends React.Component{
   render(){
     return (
       <section  id={'contact'}>

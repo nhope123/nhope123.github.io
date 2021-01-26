@@ -25,22 +25,15 @@
         padding: 0px 10px;
         cursor: pointer;
         color: white;
-
-
         }
+
     div:hover{
          color: rgba(255,0,0,0.7);
          transform: scale(1.3);
        }
     div:active{
-         visibility:hidden;
-       }
-
-       #bio[class*='active']{
-         color: black;
-       }
-
-
+       visibility:hidden;
+      }
     }
 }
 

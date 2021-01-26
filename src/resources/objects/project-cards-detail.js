@@ -13,7 +13,7 @@ import oldPage from './../image/screenshots/website.png';
 
 // Projects card information
 const cards = {
-  conveter:{
+  converter:{
     name:'Rebel Converter',
     description:'Online unit converter for length, weight and temperature.',
     src: convert,
@@ -112,7 +112,6 @@ const cards = {
     repository:'https://github.com/nhope123/2020Portfolio',
     website:'https://nhope123.github.io/2020Portfolio'
   }
-}
-;
+};
 
 export default cards;

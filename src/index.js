@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Portfolio} from './component/main';
+import Portfolio from './component/main';
+import {store} from './redux/store.js';
+import { Provider } from 'react-redux';
 
 import './style/index.scss';
 import './style/bio.scss';
@@ -15,7 +17,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Portfolio />
+    <Provider store={store}>
+      <Portfolio />
+    </Provider >
   </React.StrictMode>,
   document.getElementById('root')
 );
