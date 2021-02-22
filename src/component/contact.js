@@ -6,18 +6,18 @@ const Form = () => {
     <form >
       <div >
         <label htmlFor={'formName'}  >Name:</label>
-        <input id={'formName'} type={'text'} tabIndex={'0'} placeholder={'John'} required/>
+        <input id={'formName'} type={'text'} tabIndex={'0'} placeholder={'John'} required disabled/>
       </div>
       <div >
         <label htmlFor={'formEmail'} >Email:</label>
-        <input id={'formEmail'} type={'email'} tabIndex={'0'}  placeholder={'email@example.com'}required />
+        <input id={'formEmail'} type={'email'} tabIndex={'0'}  placeholder={'email@example.com'}required disabled />
       </div>
       <div >
         <label htmlFor={'comment'} >Comment:</label>
-        <textarea id={'comment'} type={'text'} tabIndex={'0'} placeholder={'message'} required ></textarea>
+        <textarea id={'comment'} type={'text'} tabIndex={'0'} placeholder={'Contact form is disabled. Please use the links following the form.'} required disabled ></textarea>
       </div>
       <div >
-        <button type={'submit'} value={'submit'} > Submit </button>
+        <button type={'submit'} value={'submit'} disabled> Submit </button>
       </div>
     </form>
   );
@@ -31,7 +31,7 @@ const Footer = () =>{
         <a href={'https://github.com/nhope123/'} target={'_blank'} rel={'noreferrer'} tabIndex={'0'}>
           <i className={"fa fa-github-square"} aria-hidden="true" title={'Github Repository'} ></i>
         </a>
-        <a href={'https://www.linkedin.com/in/nial-hope-b4056a204/'} target={'_blank'} rel={'noreferrer'} tabIndex={'0'}>
+        <a href={'https://www.linkedin.com/in/nialhope/'} target={'_blank'} rel={'noreferrer'} tabIndex={'0'}>
           <i className="fa fa-linkedin-square" aria-hidden="true"></i>
         </a>
         <a href={'mailto:nhope@ryerson.ca'} tabIndex={'0'}>
