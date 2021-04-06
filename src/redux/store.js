@@ -1,14 +1,16 @@
-import {createStore,combineReducers} from 'redux';
+import {createStore,combineReducers,applyMiddleware,compose} from 'redux';
+import thunk from 'redux-thunk';
 import {projectSelectionReducer} from './actions/project-display-actions.js';
-//import {default as contactReducer} from './actions/contact_action.js';
+
 import contactSlice from './actions/contact_action.js';
-console.log('in store.js');
-//console.log(contactSlice.reducer);
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 export const store = createStore(
   combineReducers({
     selection: projectSelectionReducer,
     contact: contactSlice.reducer //contactReducer
   }),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeEnhancers(applyMiddleware(thunk))
+  //window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );

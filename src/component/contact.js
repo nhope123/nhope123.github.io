@@ -1,5 +1,5 @@
 import React from 'react';
-import {changeName,changeEmail,changeComment,submitForm} from './../redux/actions/contact_action.js';
+import {changeName,changeEmail,changeComment,sendEmail} from './../redux/actions/contact_action.js';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -17,14 +17,21 @@ const mapDispatchToProps = (dispatch)=>{
     changeName:changeName,
     changeEmail:changeEmail,
     changeComment:changeComment,
-    submitForm:submitForm
+    submitForm: sendEmail
   },dispatch)
 }
 
 // Component containing the form elements for the contact page
 const Form = (props) => {
   return (
-    <form onSubmit={(event) => { props.callbacks[3](event) }} >
+    <form onSubmit={(event) => {
+      event.preventDefault();
+      props.callbacks[3]([
+                          event.target[0].value,
+                          event.target[1].value,
+                          event.target[2].value,
+                        ])
+                      }} >
       <div >
         <label htmlFor={'formName'}  >Name:</label>
         <input id={'formName'} type={'text'} tabIndex={'0'} placeholder={'John'}
@@ -84,13 +91,13 @@ class ContactPage extends React.Component{
         {
           (this.props.email_transfer === 'email sent')? (
             <div className={'success'}>
-              <p>Thank you {this.props.name}.</p>
+              <p>Thank you <b>{this.props.name}</b>.</p>
               <p> Your email was sent successfully.</p>
             </div>
           ):
           (this.props.email_transfer === 'email fail')? (
             <div className={'success'}>
-              <p> Sorry {this.props.name}.</p>
+              <p> Sorry <b>{this.props.name}</b>.</p>
               <p> Unfortunately your email was not sent.</p>
               <p> Please use the contact options below.</p>
             </div>
