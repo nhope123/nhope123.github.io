@@ -1,14 +1,17 @@
 import React from 'react';
-import {changeName,changeEmail,changeComment,sendEmail} from './../redux/actions/contact_action.js';
+import {changeName,changeEmail,changeComment,sendEmail,isVarified} from './../redux/actions/contact_action.js';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import ReCAPTCHA from "react-google-recaptcha";
+const SITEKEY = '6LdhMJ8aAAAAAH_N_KhC-f46betAJ6TaD5nnb4Ha';
 
 const mapStateToProps = (state)=>{
   return {
     name: state.contact.name,
     email: state.contact.email,
     comment: state.contact.comment,
-    email_transfer: state.contact.emailSuccess
+    email_transfer: state.contact.emailSuccess,
+    human: state.contact.human
   }
 };
 
@@ -17,7 +20,8 @@ const mapDispatchToProps = (dispatch)=>{
     changeName:changeName,
     changeEmail:changeEmail,
     changeComment:changeComment,
-    submitForm: sendEmail
+    submitForm: sendEmail,
+    varify: isVarified
   },dispatch)
 }
 
@@ -26,11 +30,12 @@ const Form = (props) => {
   return (
     <form onSubmit={(event) => {
       event.preventDefault();
-      props.callbacks[3]([
-                          event.target[0].value,
-                          event.target[1].value,
-                          event.target[2].value,
-                        ])
+      (props.human)? (
+        props.callbacks[3]([
+                            event.target[0].value,
+                            event.target[1].value,
+                            event.target[2].value,
+                          ])): alert('Are you human?')
                       }} >
       <div >
         <label htmlFor={'formName'}  >Name:</label>
@@ -49,7 +54,8 @@ const Form = (props) => {
           required  value={props.comment} onChange={(event)=>props.callbacks[2](event)}>
         </textarea>
       </div>
-      <div >
+      <ReCAPTCHA className={'varify'} sitekey={SITEKEY} onChange={props.callbacks[4]} />
+      <div>
         <input id={'submit'} type={'submit'} value={'Send'} />
         {/* <button id={'submit'} type={'submit'} value={'submit'} > Send</button> */}
       </div>
@@ -82,8 +88,13 @@ const Footer = () =>{
 // Contact Page main component
 class ContactPage extends React.Component{
   render(){
-    const formdata = {name: this.props.name,email: this.props.email,comment: this.props.comment,
-      callbacks: [this.props.changeName,this.props.changeEmail,this.props.changeComment,this.props.submitForm]
+    const formdata = {
+      name: this.props.name, email: this.props.email,
+      comment: this.props.comment, human: this.props.human,
+      callbacks: [this.props.changeName,this.props.changeEmail,
+                  this.props.changeComment,this.props.submitForm,
+                  this.props.varify
+                ]
     }
     return (
       <section  id={'contact'}>
