@@ -2,6 +2,7 @@
 @import './variables.scss';
 
 // Mobile phone css
+form{}
 .card-container{
   @include displayPosition(block,relative);
   @include dimension(70vw,calc(70vw * 0.77));

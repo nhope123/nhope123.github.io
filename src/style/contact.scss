@@ -7,7 +7,17 @@
   @include flexAttribute(column,space-around,center);
   @include titleSpace;
   background-color: $GunPowder;
+  .success{
+    @include displayPosition(flex,relative);
+    @include flexAttribute(column,space-around,center);
+    @include dimension(90vw,auto);
+    max-width: 650px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 25px 15px 10px;
+    color: black;
+    border-radius: 10px;
 
+  }
   form{
     @include displayPosition(flex,relative);
     @include flexAttribute(column,space-around,center);
@@ -17,6 +27,10 @@
     padding: 25px 15px 10px;
     color: black;
     border-radius: 10px;
+
+    .varify{      
+      margin-bottom: 0px;
+    }
 
     div{
       margin-bottom: 20px;
@@ -42,7 +56,7 @@
       height: 140px;
       @extend input;
     }
-    button{
+    button, #submit{
       line-height: 1.5;
       font-size: 15px;
       float: right;
@@ -52,8 +66,9 @@
       border: 3px solid $GunPowder;
       border-radius: 10px;
       cursor: pointer;
+      font-weight: bold;
     }
-    button:active{
+    button:active, #submit:active{
       border: 3px inset white;
     }
 
@@ -88,7 +103,7 @@
 // Css for all devices larger than moblie phones
 @media screen and (min-width: 650px){
   #contact{
-    form{
+    form, .success{
       padding: 25px;
       div{
         margin-bottom: 15px;
