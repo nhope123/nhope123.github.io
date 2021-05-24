@@ -1,13 +1,14 @@
 // Default values
 const FULLPROJECTLIST = [
-      'converter','mixer','clock','calculator','quote','markdown','product',
-      'tribute','form','tutorial','portfolio'
+      'weather','converter','mixer','clock','calculator',
+      'quote','markdown','product','tribute','form','tutorial','portfolio',
     ];
 const REACTPROJECTLIST = [
-      'converter','mixer','clock','calculator','quote','markdown','portfolio'
+      'weather','converter','mixer',
+      'clock','calculator','quote','markdown','portfolio'
     ];
-const SASSPROJECTLIST = ['converter'];
-const REDUXPROJECTLIST = ['converter'];
+const SASSPROJECTLIST = ['weather','converter'];
+const REDUXPROJECTLIST = ['weather','converter'];
 const DEFAULTSTATE = {
       buttonPressed: 'All',
       projectList: FULLPROJECTLIST

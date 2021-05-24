@@ -10,17 +10,30 @@ import quotes from './../image/screenshots/randomQuote.png';
 import survey from './../image/screenshots/survey.png';
 import tributes from './../image/screenshots/tribute.png';
 import oldPage from './../image/screenshots/website.png';
+import focus from './../image/screenshots/weather.png';
+
+const REPO = 'https://github.com/nhope123/';
+const WEB = 'https://nhope123.github.io/';
 
 // Projects card information
 const cards = {
+  weather:{
+    name:'Weather Focus',
+    description:'A location base weather service web application.',
+    src: focus,
+    alt:'Weather Focus ScreenShot',
+    tags:['React','Redux','Sass','HTML','CSS'],
+    repository:`${REPO}weather_focus`,
+    website:`${WEB}weather_focus/`,
+  },
   converter:{
     name:'Rebel Converter',
     description:'Online unit converter for length, weight and temperature.',
     src: convert,
     alt:'Converter ScreenShot',
     tags:['React','Redux','Sass','HTML','CSS'],
-    repository:'https://github.com/nhope123/converter',
-    website:'https://nhope123.github.io/converter/'
+    repository:`${REPO}converter`,
+    website:`${WEB}converter/`,
   },
   mixer:{
     name:'eFonic',
@@ -28,8 +41,8 @@ const cards = {
     src: drum,
     alt:'Drum Machine ScreenShot',
     tags:['React','HTML','CSS'],
-    repository:'https://github.com/nhope123/drums',
-    website:'https://nhope123.github.io/drums/'
+    repository:`${REPO}drums`,
+    website:`${WEB}drums/`,
   },
   clock:{
     name:'Rebel Pomodoro',
@@ -37,8 +50,8 @@ const cards = {
     src: clocki,
     alt:'Pomodoro Clock ScreenShot',
     tags:['React','HTML','CSS'],
-    repository:'https://github.com/nhope123/pomodoro',
-    website:'https://nhope123.github.io/pomodoro/'
+    repository:`${REPO}pomodoro`,
+    website:`${WEB}pomodoro/`,
   },
   calculator:{
     name:'Calculator',
@@ -46,8 +59,8 @@ const cards = {
     src:calculate,
     alt:'Calculator ScreenShot',
     tags:['React','HTML','CSS','Mathjs'],
-    repository:'https://github.com/nhope123/calculator',
-    website:'https://nhope123.github.io/calculator/'
+    repository:`${REPO}calculator`,
+    website:`${WEB}calculator/`,
   },
   quote:{
     name:'Inspire',
@@ -55,8 +68,8 @@ const cards = {
     src: quotes,
     alt:'Quote Machine ScreenShot',
     tags:['React','HTML','CSS'],
-    repository:'https://github.com/nhope123/inspire',
-    website:'https://nhope123.github.io/inspire/'
+    repository:`${REPO}inspire`,
+    website:`${WEB}inspire/`,
   },
   markdown:{
     name:'PreMarked',
@@ -64,8 +77,8 @@ const cards = {
     src: preview,
     alt:'Markdown Previewer ScreenShot',
     tags:['React','HTML','CSS','Marked.js'],
-    repository:'https://github.com/nhope123/previewer',
-    website:'https://nhope123.github.io/previewer/'
+    repository:`${REPO}previewer`,
+    website:`${WEB}previewer/`,
   },
   product:{
     name:'Hardcore Fitness',
@@ -73,8 +86,8 @@ const cards = {
     src: product,
     alt:'Product Landing Page ScreenShot',
     tags:['HTML','CSS','JavaScript'],
-    repository:'https://github.com/nhope123/2020Portfolio/blob/master/webpages/product_landing.html',
-    website:'https://nhope123.github.io/2020Portfolio/webpages/product_landing.html'
+    repository:`${REPO}2020Portfolio/blob/master/webpages/product_landing.html`,
+    website:`${WEB}2020Portfolio/webpages/product_landing.html`
   },
   tribute:{
     name:'Tribute',
@@ -82,8 +95,8 @@ const cards = {
     src: tributes,
     alt:'Tribute ScreenShot',
     tags:['HTML','CSS','JavaScript'],
-    repository:'https://github.com/nhope123/2020Portfolio/blob/master/webpages/tribute.html',
-    website:'https://nhope123.github.io/2020Portfolio/webpages/tribute.html'
+    repository:`${REPO}2020Portfolio/blob/master/webpages/tribute.html`,
+    website:`${WEB}2020Portfolio/webpages/tribute.html`,
   },
   form:{
     name:'Survey',
@@ -91,8 +104,8 @@ const cards = {
     src: survey,
     alt:'Survey Form ScreenShot',
     tags:['HTML','CSS','JavaScript'],
-    repository:'https://github.com/nhope123/2020Portfolio/blob/master/webpages/survey_form.html',
-    website:'https://nhope123.github.io/2020Portfolio/webpages/survey_form.html'
+    repository:`${REPO}2020Portfolio/blob/master/webpages/survey_form.html`,
+    website:`${WEB}2020Portfolio/webpages/survey_form.html`,
   },
   tutorial:{
     name:'ShellCom',
@@ -100,8 +113,8 @@ const cards = {
     src: tutor,
     alt:'Tutorial ScreenShot',
     tags:['HTML','CSS','JavaScript'],
-    repository:'https://github.com/nhope123/2020Portfolio/blob/master/webpages/documentation.html',
-    website:'https://nhope123.github.io/2020Portfolio/webpages/documentation.html'
+    repository:`${REPO}2020Portfolio/blob/master/webpages/documentation.html`,
+    website:`${WEB}2020Portfolio/webpages/documentation.html`,
   },
   portfolio:{
     name:'Old Portfolio',
@@ -109,8 +122,8 @@ const cards = {
     src: oldPage,
     alt:'Old Portfolio ScreenShot',
     tags:['React','HTML','CSS','JavaScript'],
-    repository:'https://github.com/nhope123/2020Portfolio',
-    website:'https://nhope123.github.io/2020Portfolio'
+    repository:`${REPO}2020Portfolio`,
+    website:`${WEB}2020Portfolio`,
   }
 };
 
