@@ -11,12 +11,23 @@ import survey from './../image/screenshots/survey.png';
 import tributes from './../image/screenshots/tribute.png';
 import oldPage from './../image/screenshots/website.png';
 import focus from './../image/screenshots/weather.png';
+import recipe from './../image/screenshots/recipe-lg.png';
+
 
 const REPO = 'https://github.com/nhope123/';
 const WEB = 'https://nhope123.github.io/';
 
 // Projects card information
 const cards = {
+  recipe:{
+    name:'Creole Food',
+    description:'An online application for creating, editing, viewing and downloading of clients favorite recipes.',
+    src: recipe,
+    alt:'Creole Food ScreenShot',
+    tags:['React','Redux','HTML','CSS','Bootstrap'],
+    repository:`${REPO}creole_food`,
+    website:`${WEB}creole_food/`,
+  },
   weather:{
     name:'Weather Focus',
     description:'A location base weather service web application.',

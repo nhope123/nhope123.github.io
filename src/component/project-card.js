@@ -10,7 +10,7 @@ const ProjectCard = (props)=>{
       framework.push(<CardIcon key={i} {...item} />)
     }
   });
-
+      //  console.log(props.card.name);
   return (
     <div  className={'card-container'} tabIndex={'0'}>
       {/* Visible screenshot */}

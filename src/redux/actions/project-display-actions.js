@@ -1,14 +1,23 @@
+import cards from '../../resources/objects/project-cards-detail'
+
+const listedProjects = (anObject, aString) =>{
+  let returnList = []
+  if(aString === 'full'){
+    returnList = Object.keys(anObject)
+  }
+  else if (aString) {
+      returnList = Object.keys(anObject).filter((item) => {
+        return (anObject[item].tags.includes(aString));
+      })
+  }
+  return returnList
+}
+console.log(listedProjects(cards))
 // Default values
-const FULLPROJECTLIST = [
-      'weather','converter','mixer','clock','calculator',
-      'quote','markdown','product','tribute','form','tutorial','portfolio',
-    ];
-const REACTPROJECTLIST = [
-      'weather','converter','mixer',
-      'clock','calculator','quote','markdown','portfolio'
-    ];
-const SASSPROJECTLIST = ['weather','converter'];
-const REDUXPROJECTLIST = ['weather','converter'];
+const FULLPROJECTLIST = listedProjects(cards,'full');
+const REACTPROJECTLIST = listedProjects(cards,'React');
+const SASSPROJECTLIST = listedProjects(cards,'Sass');
+const REDUXPROJECTLIST = listedProjects(cards,'Redux');
 const DEFAULTSTATE = {
       buttonPressed: 'All',
       projectList: FULLPROJECTLIST
