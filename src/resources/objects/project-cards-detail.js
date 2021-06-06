@@ -21,7 +21,7 @@ const WEB = 'https://nhope123.github.io/';
 const cards = {
   recipe:{
     name:'Creole Food',
-    description:'An online application for creating, editing, viewing and downloading of clients favorite recipes.',
+    description:'Online cooking recipe organizer.',
     src: recipe,
     alt:'Creole Food ScreenShot',
     tags:['React','Redux','HTML','CSS','Bootstrap'],
