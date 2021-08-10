@@ -12,13 +12,45 @@ import tributes from './../image/screenshots/tribute.png';
 import oldPage from './../image/screenshots/website.png';
 import focus from './../image/screenshots/weather.png';
 import recipe from './../image/screenshots/recipe-lg.png';
-
+import todo from './../image/screenshots/todo.png';
+import booklist from './../image/screenshots/booklist.png';
 
 const REPO = 'https://github.com/nhope123/';
 const WEB = 'https://nhope123.github.io/';
 
+/*
+app:{
+    name:'app',
+    description:'',
+    src: app,
+    alt:' ScreenShot',
+    tags:['React','Redux','HTML','Sass','Bootstrap'],
+    repository:`${REPO}app`,
+    website:`${WEB}app/`,
+  },
+
+*/
+
 // Projects card information
 const cards = {
+  todoManager:{
+    name:'Todo Manager',
+    description:'Online Todo list manager.',
+    src: todo,
+    alt:'Todo Manager ScreenShot',
+    tags:['React','Redux','HTML','Sass','Bootstrap'],
+    repository:`${REPO}todo-manager`,
+    website:`${WEB}todo-manager/`,
+  },
+  bookList:{
+    name:'BookList',
+    description:'Online book or blog reading tracker for all uncompleted reading.',
+    src: booklist,
+    alt:'Book List ScreenShot',
+    tags:['React','Redux','HTML','Sass','Bootstrap'],
+    repository:`${REPO}booklist`,
+    website:`${WEB}booklist/`,
+  },
   recipe:{
     name:'Creole Food',
     description:'Online cooking recipe organizer.',
