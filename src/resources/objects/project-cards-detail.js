@@ -14,6 +14,7 @@ import focus from './../image/screenshots/weather.png';
 import recipe from './../image/screenshots/recipe-lg.png';
 import todo from './../image/screenshots/todo.png';
 import booklist from './../image/screenshots/booklist.png';
+import wazoo from './../image/screenshots/wazoo.png';
 
 const REPO = 'https://github.com/nhope123/';
 const WEB = 'https://nhope123.github.io/';
@@ -33,6 +34,15 @@ app:{
 
 // Projects card information
 const cards = {
+  wazoos:{
+    name:'Wazoo',
+    description:'Twitch User data dashboard.',
+    src: wazoo,
+    alt:' ScreenShot',
+    tags:['React','HTML','Sass','Bootstrap'],
+    repository:`${REPO}wazoo`,
+    website:`${WEB}wazoo/`,
+  },
   todoManager:{
     name:'Todo Manager',
     description:'Online Todo list manager.',
